@@ -1,0 +1,135 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(0deg, #304352, #d7d2cc);
+    font-family: sans-serif;
+    min-height: 100vh;
+    display: grid;
+}
+
+.wrap-doors {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.border {
+    box-shadow: 0 0 0 10px rgb(35, 32, 27);
+    background: black;
+    perspective: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.door {
+    width: 190px;
+    height: 400px;
+    background: url(https://трейдшоп.рф/image/cache/catalog/products/Doors/Termal/grand1-1000x1000.jpg) center center no-repeat;
+    background-size: cover;
+    transition: all 0.3s;
+    transform-origin: 0 50%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.goat-auto {
+    height: 150px;
+    width: 150px;
+    background-image: url(https://avatars.mds.yandex.net/get-zen_doc/1894366/pub_5d9dc1052fda8600b1530b74_5d9dc12192414d00ad7db2d4/scale_1200);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    transition: all 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.overlay {
+    position: absolute;
+    min-height: 100vh;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    background: rgba(0, 0, 0, 0.596);
+    width: 100%;
+}
+
+.window {
+    width: 40%;
+    background: white;
+    padding: 10px;
+    text-align: justify;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.493);
+    border: 1px solid black;
+    margin-bottom: 150px;
+}
+
+.leading {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 10px;
+}
+
+.description {
+    display: inline;
+    font-size: 15px;
+}
+
+button {
+    display: block;
+    background: #ffc600;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    margin: 0 auto;
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.clean {
+    display: none;
+}
+
+.statistics {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Pacifico', cursive;
+}
+
+.statistics p {
+    color: rgb(35, 32, 27);
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.door.open {
+    transform: rotateY(75deg);
+    pointer-events: none;
+}
+
+.goat-auto.enter {
+    opacity: 1;
+    visibility: visible;
+}
+
+.door.target-red {
+    box-shadow: 0 0 30px 30px rgba(160, 9, 4, 0.788);
+}

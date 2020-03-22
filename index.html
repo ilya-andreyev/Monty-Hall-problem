@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Парадокс Монти Холла</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="overlay">
+      <div class="window">
+        <img class="leading" src="http://www.tracykrimmer.com/wp-content/uploads/2016/05/tvhost-1170x1170.jpg">
+        <p class="description">Привет! Добро пожаловать на страницу посвященную парадоксу Монти Холла. Это одна из известных задач теории вероятностей основанной на американской телеигре «Let’s Make a Deal», и названа в честь ведущего этой передачи. Представьте, что вы стали участником игры, в которой вам нужно выбрать одну из трёх дверей. За одной из дверей находится автомобиль, за двумя другими дверями — козы. Вы выбираете одну из дверей, например, номер 1, после этого ведущий, который знает, где находится автомобиль, а где — козы, открывает одну из оставшихся дверей, например, номер 3, за которой находится коза. Ведущий спросит у вас – не желаете ли вы изменить свой выбор? Логика нам подсказывает, что вероятность нахождения автомобиля за дверьми одинакова: 50/50, однако, если вы сделаете несколько попыток, то окажется, что побеждать вы будете чаще если измените свой выбор с первоначальной двери.</p>
+        <button class="action">Убедитесь в этом сами!</button>
+        <button class="clean">Очистить статистику</button>
+      </div>
+    </div>
+    
+    <div class="statistics">
+      <p>Кол-во побед при изменении двери: <span class="wins swap">0</span> Из <span class="try swap">0</span> попыток</p>
+      <p>Кол-во побед при не изменении двери: <span class="wins noswap">0</span> Из <span class="try noswap">0</span> попыток</p>
+    </div>
+
+    <div class="wrap-doors">
+      <div class="border">
+        <div class="goat-auto first"></div>
+        <div class="door first"></div>
+      </div>
+      <div class="border">
+        <div class="goat-auto second"></div>
+        <div class="door second"></div>
+      </div>
+      <div class="border">
+        <div class="goat-auto third"></div>
+        <div class="door third"></div>
+      </div>
+    </div>
+
+    <style></style>
+    <script src="scripts.js"></script>
+  </body>
+</html>

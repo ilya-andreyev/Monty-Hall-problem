@@ -133,3 +133,26 @@ button {
 .door.target-red {
     box-shadow: 0 0 30px 30px rgba(160, 9, 4, 0.788);
 }
+
+@media (max-device-width: 600px) {
+    .window {
+        width: 80%;
+    }
+    
+    .description {
+        font-size: 30px;
+    }
+
+    .statistics p {
+        font-size: 30px;
+    }
+
+    .leading {
+        width: 200px;
+        height: 200px;
+    }
+    
+    button {
+        font-size: 40px;
+    }
+}

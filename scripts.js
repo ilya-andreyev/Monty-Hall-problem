@@ -61,16 +61,20 @@ function doorOpen() {
         if (this.classList.contains('target-red')) {
           tryNoSwap.textContent++;
           if (winGoat) {
+            document.querySelector('.goat-sound').play();
             description.textContent = `Раз хотите ездить на козе, то пожалуйста, вот вам коза.`;
           } else {
             winsNoSwap.textContent++;
+            document.querySelector('.car-sound').play();
             description.textContent = `Вы попали в 33,3%. Не знаю как вы это сделали, советую вам сходить сегодня в казино, и да, машина ваша.`;
           }
         } else {
           trySwap.textContent++;
           if (winGoat) {
+            document.querySelector('.goat-sound').play();
             description.textContent = `Вероятность победы была 66,6%, но вы попали в 33,3% неудачи. Ну, кому-то же надо быть неудачником, забирайте свою козочку.`;
           } else {
+            document.querySelector('.car-sound').play();
             winsSwap.textContent++;
             description.textContent = `Молодец! Я же говорил, что это работает. Вот ваша машина.`;
           }

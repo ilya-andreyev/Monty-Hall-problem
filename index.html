@@ -2,43 +2,44 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Парадокс Монти Холла</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monty Hall problem</title>
+    <link rel="stylesheet" href="public/css/style.css" />
   </head>
-
   <body>
     <div class="overlay">
       <div class="window">
-        <img class="leading" src="img/leading.jpg" />
+        <img class="leading" src="public/images/leading.jpg" />
         <p class="description">
-          Привет! Добро пожаловать на страницу посвященную парадоксу Монти
-          Холла. Это одна из известных задач теории вероятностей основанной на
-          американской телеигре «Let’s Make a Deal», и названа в честь ведущего
-          этой передачи. Представьте, что вы стали участником игры, в которой
-          вам нужно выбрать одну из трёх дверей. За одной из дверей находится
-          автомобиль, за двумя другими дверями — козы. Вы выбираете одну из
-          дверей, например, номер 1, после этого ведущий, который знает, где
-          находится автомобиль, а где — козы, открывает одну из оставшихся
-          дверей, например, номер 3, за которой находится коза. Ведущий спросит
-          у вас – не желаете ли вы изменить свой выбор? Логика нам подсказывает,
-          что вероятность нахождения автомобиля за дверьми одинакова: 50/50,
-          однако, если вы сделаете несколько попыток, то окажется, что побеждать
-          вы будете чаще если измените свой выбор с первоначальной двери.
+          Hello! Welcome to the page dedicated to the Monty Hall problem. This
+          is one of the well-known problems in probability theory based on the
+          American TV game show "Let's Make a Deal," and it is named after the
+          host of the show. Imagine that you are a participant in a game where
+          you need to choose one of three doors. Behind one of the doors is a
+          car, and behind the other two doors are goats. You choose one of the
+          doors, for example, number 1. After this, the host, who knows where
+          the car and the goats are, opens one of the remaining doors, for
+          example, number 3, behind which there is a goat. The host then asks
+          you if you would like to change your choice. Logic tells us that the
+          probability of finding the car behind the doors is the same: 50/50.
+          However, if you make several attempts, it turns out that you will win
+          more often if you change your choice from the initial door.
         </p>
-        <button class="action">Убедитесь в этом сами!</button>
-        <button class="clean">Очистить статистику</button>
+        <button class="action">See for yourself!</button>
+        <button class="clean">Clear statistics</button>
       </div>
     </div>
 
     <div class="statistics">
       <p>
-        Кол-во побед при изменении двери: <span class="wins swap">0</span> Из
-        <span class="try swap">0</span> попыток
+        Number of wins if you changed the door:
+        <span class="wins swap">0</span> out of
+        <span class="try swap">0</span> attempts
       </p>
       <p>
-        Кол-во побед при не изменении двери:
-        <span class="wins noswap">0</span> Из
-        <span class="try noswap">0</span> попыток
+        Number of wins if you did not change the door:
+        <span class="wins noswap">0</span> out of
+        <span class="try noswap">0</span> attempts
       </p>
     </div>
 
@@ -57,10 +58,9 @@
       </div>
     </div>
 
-    <audio src="sounds/goat sound.wav" class="goat-sound"></audio>
-    <audio src="sounds/car sound.wav" class="car-sound"></audio>
+    <audio src="public/sounds/goat sound.wav" class="goat-sound"></audio>
+    <audio src="public/sounds/car sound.wav" class="car-sound"></audio>
 
-    <style></style>
-    <script src="scripts.js"></script>
+    <script src="public/js/scripts.js"></script>
   </body>
 </html>

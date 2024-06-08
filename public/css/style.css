@@ -35,7 +35,7 @@ body {
 .door {
   width: 190px;
   height: 400px;
-  background: url(img/door.jpg) center center no-repeat;
+  background: url(../images/door.jpg) center center no-repeat;
   background-size: cover;
   transition: all 0.3s;
   transform-origin: 0 50%;
@@ -46,7 +46,6 @@ body {
 .goat-auto {
   height: 150px;
   width: 150px;
-  background-image: url(https://avatars.mds.yandex.net/get-zen_doc/1894366/pub_5d9dc1052fda8600b1530b74_5d9dc12192414d00ad7db2d4/scale_1200);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
